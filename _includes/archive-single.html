@@ -71,7 +71,7 @@
           {% if post.codeurl %} | {% endif %}
         {% endif %}
         {% if post.codeurl %}
-          <a href="{{ post.codeurl }}">GitHub</a>
+          <a href="{{ post.codeurl }}">{{ post.codestatus | default: "Open-sourced Code" }}</a>
         {% endif %}
       </p>
     {% endif %}
